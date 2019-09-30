@@ -1,0 +1,118 @@
+body {
+  color:#fff;
+  background-color:#2c3e50;
+  font-family: -apple-system, BlinkMacSystemFont, "Neue Haas Grotesk Text Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+  .form, .greetings {
+    display:none;
+  }
+  .showing {
+    display:block;
+  }
+
+
+  .js-clock {
+    height: 180px;
+    font-size: 70px;
+    margin-top:140px;
+    text-shadow: 0px 0px 8px #444;
+    text-align: center;
+  }
+
+  .js-clock h1 {
+    font-weight: 500;
+    height:120px;
+  }
+
+
+.js-form, .js-toDoForm {
+  text-align: center;
+}
+
+.js-form {
+  margin-bottom: 30px;
+}
+.js-form > input {
+  padding:8px;
+  background:none;
+  font-size: 30px;
+  border:none;
+  border-bottom: 3px solid #fff;
+  color:#fff;
+  width:400px;
+}
+
+.js-toDoForm > input {
+  padding:8px;
+  background:none;
+  font-size: 30px;
+  border:none;
+  border-bottom: 3px solid #fff;
+  color:#fff;
+  width:400px;
+}
+
+::placeholder {
+  color:#fff;
+}
+
+.js-greetings {
+  text-align: center;
+  font-size: 40px;
+  height:30px;
+  margin-top: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity:1;
+  }
+}
+
+.bgImage {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background-size:cover;
+  z-index: -1;
+  animation:fadeIn .5s linear;
+}
+
+.js-weather {
+  font-size: 28px;
+  line-height: 35px;
+  position: absolute;
+    top: 20px;
+    right: 20px;
+text-shadow: 0 0 5px rgba(0,0,0, 0.5);
+text-align: right;
+}
+
+.js-toDoList {
+  font-size: 25px;
+  margin-left: 30px;
+  display: flex;
+  flex-flow:column;
+  margin-top: 35px;
+}
+
+.js-toDoList li {
+  margin-bottom: 10px;
+  width:500px;
+}
+
+.js-toDoList button {
+  margin-left: 10px;
+    background: none;
+    border: none;
+    font-weight: 600;
+    height: 25px;
+    font-size: 18px;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
